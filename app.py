@@ -6,6 +6,8 @@ car_data = pd.read_csv("./datasets/vehicles_us.csv")
 hist_button = str.button('Construir histograma')
 scatter_button = str.button('Construir diagrama de dispersión')
 
+str.header('Dashboard de vehículos usados de Estados Unidos')
+
 if hist_button:
     str.write('Creación de un histograma')
     fig = px.histogram(car_data, x='odometer')
